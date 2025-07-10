@@ -1710,7 +1710,7 @@ def process_date_range_global_5km_ST(date_range,input_variables,year):
         EFMAPS = METPreprocess.calculateChem(chem_names, COMPOUND_EMISSION_FACTORS, PFTS)
         EFMAPS = ee.Image(ee.List(EFMAPS).slice(1).iterate(METPreprocess.add_bands, ee.Image(ee.List(EFMAPS).get(0))))
         F_EFMAPs = EFMAPS
-    # 计算Total plant percentage
+    # Total plant percentage
     ContainPlantbandNames = PFTS.bandNames().slice(0, 15)
     PFTS_ContainPlant = PFTS.select(ContainPlantbandNames)
     TotalPTFS = PFTS_ContainPlant.reduce(ee.Reducer.sum())
@@ -2070,7 +2070,7 @@ def process_date_range_local(date_range,input_variables,year):
         EFMAPS = METPreprocess.calculateChem(chem_names, COMPOUND_EMISSION_FACTORS, PFTS)
         EFMAPS = ee.Image(ee.List(EFMAPS).slice(1).iterate(METPreprocess.add_bands, ee.Image(ee.List(EFMAPS).get(0))))
         F_EFMAPs = EFMAPS
-    # 计算Total plant percentage
+    # Total plant percentage
     ContainPlantbandNames = PFTS.bandNames().slice(0, 15)
     PFTS_ContainPlant = PFTS.select(ContainPlantbandNames)
     TotalPTFS = PFTS_ContainPlant.reduce(ee.Reducer.sum())
@@ -2176,7 +2176,7 @@ def main(namelist_path  ,start_date, end_date,perturbation_dict=None):
     """
     print(f"Running script from {start_date} to {end_date}")
     
-    # 脚本逻辑
+    #
     print('main')
     # namelist_path = r'./input/GEE_MEGAN_namelist'
     input_variables = read_parameters_from_file(namelist_path)
