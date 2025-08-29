@@ -61,22 +61,21 @@ Open the <namelist> file in the project root and adjust paths and options (each 
 
 ### 3.2 Single timestep
 
-<BASH>
-
+```bash
 python main_all_type.py namelist '2018-06-01 03:00:00' '2018-06-01 03:00:00'
+```
 
-*#* *➜ output/GEE_MEGAN_ER_[SPECIES]_2018-06-01_03.tif*
+➜ output/GEE_MEGAN_ER_[SPECIES]_2018-06-01_03.tif*
 
 ### 3.3 Batch run
 
-<BASH>
-
+```bash
 python Batch_run.py namelist
+```
 
-*#* *➜ output/*.tif  output/*.nc (if NetCDF enabled)
+*➜ output/*.tif  output/*.nc (if NetCDF enabled)
 
 Processing 744 hourly steps (one month) took ~1 h in our tests; runtime is dominated by GEE, not local hardware.
-
 
 
 ## 4 Code Layout
@@ -100,4 +99,5 @@ Each file begins with a doc-string describing inputs, outputs, and functions.
 ## 5. License
 
 GEE-MEGAN is released under the Apache 2.0 License (see *LICENSE* file).
+
 
