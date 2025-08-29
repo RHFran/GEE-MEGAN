@@ -2,7 +2,7 @@
 
 GEE-MEGAN extends MEGAN2.1 biogenic VOC model to Google Earth Engine (GEE).
 
-With dynamic, satellite-based land-cover and vegetation data, it generates near-real-time BVOC emissions at 10-30 m resolution, and can run continental-scale (500m) or global (5k m) simulations. 
+With dynamic, satellite-based land-cover and vegetation data, it generates near-real-time BVOC emissions at 10-30 m resolution, and can run continental-scale (500 m) or global (5 km) simulations. 
 
 In addition, related work has been published in: **Zhang, Y., Ran, H., Guenther, A. et al. Improved modelling of biogenic emissions in human-disturbed forest edges and urban areas. Nat Commun 16, 8064 (2025). https://doi.org/10.1038/s41467-025-63437-8**
 
@@ -101,6 +101,7 @@ Each file begins with a doc-string describing inputs, outputs, and functions.
 ## 5. License
 
 GEE-MEGAN is released under the Apache 2.0 License (see *LICENSE* file).
+
 
 
 
